@@ -33,7 +33,8 @@ Script personalizado para servidores **FiveM** basado en **QBox**, que permite c
 ---
 
 ## 🖼️ Capturas de pantalla
-_(Aquí puedes añadir imágenes del script en acción dentro del juego)_![WhatsApp Image 2025-09-15 at 02 30 19](https://github.com/user-attachments/assets/c54ffbd9-a575-453c-94e5-6225c7518721)
+![f4r3-missions](https://github.com/user-attachments/assets/5f015353-5c32-4b4c-8376-7c9a7cd6a754)
+
 
 
 ---
