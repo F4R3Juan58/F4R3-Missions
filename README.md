@@ -68,7 +68,7 @@ mysql -u usuario -p basededatos < F4R3-Missions.sql
 ---
 
 ## 🖼️ Capturas de pantalla
-_(Aquí puedes añadir imágenes del script en acción dentro del juego)_
+![f4r3-missions](https://github.com/user-attachments/assets/3b9c53f3-860e-44fd-a773-be60f1b9111f)
 
 ---
 
