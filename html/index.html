@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestor de Misiones</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="display:none;">
+  <div id="app">
+    <nav class="tabs">
+      <button data-tab="list" class="active">Misiones</button>
+      <button data-tab="create">Crear/Editar</button>
+    </nav>
+
+    <section id="tab-list" class="tabview active">
+      <h3>Robos</h3>
+      <div id="missionsRob"></div>
+      <h3>Interacciones</h3>
+      <div id="missionsInteract"></div>
+    </section>
+
+    <section id="tab-create" class="tabview">
+      <form id="createForm">
+        <label>Nombre de misión</label>
+        <input type="text" id="missionName" required />
+
+        <label>Modelo de NPC</label>
+        <input type="text" id="npcModel" placeholder="Selecciona un NPC" readonly />
+        <button type="button" class="btn ghost" id="placeNpcBtn">Colocar NPC</button>
+
+        <div class="npc-categories">
+          <h4>Civiles 👨‍👩‍👧‍👦</h4>
+          <div class="npc-list">
+            <button type="button" onclick="selectPed('a_m_m_business_01')">a_m_m_business_01</button>
+            <button type="button" onclick="selectPed('a_f_m_bevhills_01')">a_f_m_bevhills_01</button>
+            <button type="button" onclick="selectPed('a_m_m_farmer_01')">a_m_m_farmer_01</button>
+          </div>
+
+          <h4>Bandas 🕶</h4>
+          <div class="npc-list">
+            <button type="button" onclick="selectPed('g_m_y_famca_01')">g_m_y_famca_01</button>
+            <button type="button" onclick="selectPed('g_m_y_ballaeast_01')">g_m_y_ballaeast_01</button>
+            <button type="button" onclick="selectPed('g_m_y_mexgoon_01')">g_m_y_mexgoon_01</button>
+          </div>
+
+          <h4>Policías 🚔</h4>
+          <div class="npc-list">
+            <button type="button" onclick="selectPed('s_m_y_cop_01')">s_m_y_cop_01</button>
+            <button type="button" onclick="selectPed('s_f_y_cop_01')">s_f_y_cop_01</button>
+            <button type="button" onclick="selectPed('csb_cop')">csb_cop</button>
+          </div>
+
+          <h4>Animales 🐕</h4>
+          <div class="npc-list">
+            <button type="button" onclick="selectPed('a_c_chop')">a_c_chop</button>
+            <button type="button" onclick="selectPed('a_c_cat_01')">a_c_cat_01</button>
+            <button type="button" onclick="selectPed('a_c_cow')">a_c_cow</button>
+          </div>
+        </div>
+
+        <!-- Campos ocultos para coords -->
+        <input type="hidden" id="npcX" />
+        <input type="hidden" id="npcY" />
+        <input type="hidden" id="npcZ" />
+        <input type="hidden" id="npcHeading" />
+
+        <label>Tipo de misión</label>
+        <select id="missionType">
+          <option value="robable">Robable</option>
+          <option value="interactivo">Interactivo</option>
+        </select>
+
+        <div id="configFields"></div>
+
+
+        <button type="submit" class="btn">Guardar</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

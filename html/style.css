@@ -1,0 +1,224 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: rgba(20, 20, 20, 0.9);
+  color: #f9fafb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#app {
+  width: 800px;
+  margin: 30px auto;
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #374151;
+  color: #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tabs button.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.tabview {
+  display: none;
+}
+
+.tabview.active {
+  display: block;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 13px;
+  color: #93c5fd;
+}
+
+input[type="text"], input[type="number"], textarea, select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #f9fafb;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Botones */
+.btn {
+  padding: 10px 14px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid #4b5563;
+  color: #f9fafb;
+}
+
+.btn.ghost:hover {
+  border-color: #2563eb;
+  color: #93c5fd;
+}
+
+/* Lista de NPCs */
+.npc-categories {
+  margin-top: 10px;
+  display: grid;
+  gap: 12px;
+}
+
+.npc-categories h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #93c5fd;
+}
+
+.npc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.npc-list button {
+  background: #374151;
+  color: #f9fafb;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.npc-list button:hover {
+  background: #2563eb;
+}
+
+/* Cards */
+.card {
+  background: #111827;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #374151;
+}
+
+.card h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #facc15;
+}
+
+.card small {
+  color: #9ca3af;
+}
+
+.card button {
+  margin-top: 6px;
+}
+
+/* Layout input + preview */
+.npc-model-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.npc-model-row input {
+  flex: 1;
+}
+
+#npcPreview {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background: #1f2937;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: rgba(20,20,20,0.95);
+  color: #eee;
+  margin: 0;
+  padding: 1rem;
+}
+
+h3, h4 {
+  margin-top: 1rem;
+}
+
+input, button, select, textarea {
+  padding: 6px;
+  margin: 4px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #222;
+  color: #eee;
+}
+
+button {
+  cursor: pointer;
+  background: #333;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #555;
+}
+button.danger {
+  background: #933;
+}
+button.danger:hover {
+  background: #b55;
+}
+
+.inline-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
