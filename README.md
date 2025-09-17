@@ -1,12 +1,12 @@
 # 🚀 F4R3 Missions
 
-Script personalizado para servidores **FiveM** basado en **QBCore**, que permite crear, gestionar y completar misiones dentro del juego de forma dinámica.
+Script personalizado para servidores **FiveM** basado en **Qbox**, que permite crear, gestionar y completar misiones dentro del juego de forma dinámica.
 
 ---
 
 ## 📌 Características
 - 🎯 Sistema de misiones dinámico
-- 🛠️ Compatible con **QBCore**
+- 🛠️ Compatible con **Qbox**
 - 👥 Posibilidad de configurar misiones individuales o en grupo
 - ⚡ Optimizado para servidores RP
 - 🔧 Fácil configuración y personalización
@@ -18,7 +18,7 @@ Script personalizado para servidores **FiveM** basado en **QBCore**, que permite
    ```bash
    git clone https://github.com/F4R3Juan58/F4R3-Missions.git
    ```
-2. Asegúrate de tener **QBCore Framework** instalado.
+2. Asegúrate de tener **Qbox Framework** instalado.
 3. Añade `ensure F4R3-Missions` en tu `server.cfg`.
 
 ---
@@ -68,13 +68,12 @@ mysql -u usuario -p basededatos < F4R3-Missions.sql
 ---
 
 ## 🖼️ Capturas de pantalla
-![f4r3-missions](https://github.com/user-attachments/assets/d8ada742-6717-4eaf-b476-c75d3c4d34a0)
-
+_(Aquí puedes añadir imágenes del script en acción dentro del juego)_
 
 ---
 
 ## 📜 Requisitos
-- [QBCore Framework](https://github.com/qbcore-framework)
+- [Qbox Framework](https://github.com/Qbox-framework)
 - Servidor **FiveM** actualizado
 
 ---
